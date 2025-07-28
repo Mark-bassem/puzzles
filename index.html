@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>لعبة ألغاز الذكاء</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" href="puzzle.png">
+</head>
+<body>
+  <div class="game-container">
+    <h1 class="title">💡 لعبة ألغاز الذكاء</h1>
+
+    <div id="puzzle-box">
+      <div id="level"></div>
+      <div id="timer">⏳ الوقت: <span id="time">15</span> ثانية</div>
+      <div id="question"></div>
+      <div id="options"></div>
+      <button id="next-btn" class="hidden">التالي ➡️</button>
+    </div>
+
+    <div id="result" class="hidden"></div>
+    <button onclick="resetProgress()" id="reset-btn">🗑️ إعادة تعيين التقدم</button>
+    </div>
+
+  
+
+    <script src="utils/timer.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
